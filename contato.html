@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnders</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="css/contato.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ============= Menu superior =================== -->
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 id="h5" class="my-0 mr-md-auto font-weight-bolder">FrontEnders</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Início</a>
+        <a class="p-2 text-dark" href="servicos.html">Serviços</a>
+        <a class="p-2 text-dark" href="login.html">Login</a>
+        <a class="p-2 text-dark" href="contato.html">Contato</a>
+        <a class="p-2 text-dark" href="lista-espera.html">Lista de espera</a>
+        <a class="p-2 text-dark" href="recuperar-senha.html">Recuperar senha</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="login.html">Login</a>
+    </div>
+
+
+    <!-- ============= Slides do topo de página =================== -->
+    <main role="main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-oppacity" src="imagens/prog7.jpg" alt="">
+              <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Ajudamos voce a trilhar seu caminho na Programação.</h1>
+                <p>
+                  Comece a se preparar agora.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="lista-espera.html">INSCREVA-SE</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-oppacity" src="imagens/background-02.png" alt="FrontEnders Background">
+                <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Estamos aqui para te ajudar a alcançar sua meta.</h1>
+                <p>
+                  Entre em contato conosco para maiores informações.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="lista-espera.html">INSCREVA-SE</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/_background-03.png" alt="">
+              <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Quem somos.</h1>
+                <p>
+                 Conheça mais sobre nossa equipe multidisciplinar.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="contato.html">Saber mais.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#myCarousel"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#myCarousel"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+
+      <!-- ============= Informações de contato dos membros do grupo =================== -->
+
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/Gustavo.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>Gustavo</h2>
+            <p id="texto-azul">
+              Desenvolvedora das páginas de serviços e contato. 
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/João.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>João</h2>
+            <p id="texto-azul">
+              Desenvolvedora das páginas principal e de serviços.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/Leonardo.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>Leonardo</h2>
+            <p id="texto-azul">
+              Desenvolvedor das páginas de login e recuperação de senha.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/Juan.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>Juan</h2>
+            <p id="texto-azul">
+              Desenvolvedora da página de quiz e ranking.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/Henrique.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>Henrique</h2>
+            <p id="texto-azul">
+              Desenvolvedor da página de cadastro na lista de espera.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="foto-contato"
+              src="imagens/Bruno.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>Bruno</h2>
+            <p id="texto-azul">
+              Desenvolvedor da página de cadastro na lista de espera.
+            </p>
+          </div>
+      </div>
+      <!--===========  Rodapé  =================== -->
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img
+              class="mb-2"
+              src="imagens/FrontEnders.png"
+              alt=""
+              width="150"
+              height="150"/>
+            <small class="d-block mb-3 text-muted"
+              >FrontEnders &copy; 2017-2022</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="header-footer">Nossos Serviços</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Curso de HTML</a></li>
+              <li><a class="text-muted" href="#">Curso de CSS</a></li>
+              <li><a class="text-muted" href="#">Curso de JavaScript</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="header-footer">Fale Conosco</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="contato.html">Contato</a></li>
+              <li><a class="text-muted" href="login.html">Login</a></li>
+              <li>
+                <a class="text-muted" href="recuperar-senha.html"
+                  >Recuperar senha</a>
+              </li>
+              <li>
+                <a class="text-muted" href="lista-espera.html"
+                  >Lista de espera</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</html>

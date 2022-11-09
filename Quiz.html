@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap-grid.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 id="h5" class="my-0 mr-md-auto font-weight-bolder">FrontEnders</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="index.html">Início</a>
+        <a class="p-2 text-dark" href="quiz.html">Quiz</a>
+        <a class="p-2 text-dark" href="servicos.html">Serviços</a>
+        <a class="p-2 text-dark" href="login.html">Login</a>
+        <a class="p-2 text-dark" href="contato.html">Contato</a>
+        <a class="p-2 text-dark" href="lista-espera.html">Lista de espera</a>
+        <a class="p-2 text-dark" href="recuperar-senha.html">Recuperar senha</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="login.html">Login</a>
+    </div>
+    <!-- Conteúdo da página -->
+    <div id="container" class="container bg-white border-bottom shadow-sm rounded w-50"> 
+        <h1 class="p-2 text-primary text-center font-weight-bolder">O quanto você sabe? </h1>
+        <p class="text-dark text-center font-weight-normal">Teste seus conhecimentos em Progamação com o nosso quiz.</p>
+        <div id="porcentagem_q_res"></div>
+
+        <form action="">
+          <div id="q1"></div>
+                 <h2 class="text-dark font-weight-bold">Quetão 1</h2>
+                <h3 class="text-dark font-weight-normal">O que é um byte?</h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                 A -A maior unidade de armazenamento.
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - Uma unidade de armazenamento que tem tamanho desconhecido.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                C -Byte é uma unidade de armazenamento representa o tamanho.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                D -Menor unidade de armazenamento que um computador pode usar para representar um dado. 
+              </label>
+            </div>
+            <button id="submit1" type="submit">Enviar Resposta</button>
+          </div>
+            <div id="q2" class="d-none">
+                <h2>Quetão 2</h2>
+                <h3 class="text-dark font-weight-normal">Qual o significado das siglas a seguir:
+                  *HTTP* e *HTTPs?</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2-a" checked>
+                  <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  A - Protocolo de Transferencia de Hipertexto e Protocolo de Transferência d Hipertexto Seguro, respectivamente. 
+                  </label>
+                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2-b" value=""  checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  B - Protocolo de Transição de Hipertexto e Protocolo de Transição de Hipertextos.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3-c" value="">
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                  C - Programa de Transferencia de Hiperlink e  Programa de Transferencia de Hiperlinks.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4-d" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  D - Protocolo de Transcrição de Hipertexto e Protocolo de Transcrição de Hipertexto Seguro.
+                </label>
+              </div>
+              <button id="submit2" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q3" class="d-none">
+                <h2>Quetão 3</h2>
+                <h3 class="text-dark font-weight-normal">Qual a forma correta de atribuir valor a uma variável?</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3-a" checked>
+                  <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  A - Var num = 10
+                  </label>
+                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3-b" value=""  checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  B -  Var num (10)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3-c" value="">
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                  C - Var num => 10
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3-d" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  D - Var num{10}
+                </label>
+              </div>
+              <button id="submit3" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q4" class="d-none">
+                <h2>Quetão 4</h2>
+                <h3 class="text-dark font-weight-normal">Quais das opções abaixo é a correta ? 
+                  . Var a = "13"
+                  . Var b = 3
+                  . Var soma = a+b
+                  . Console. log (soma)</h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                 A - 16 
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - 13
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                C - Erro 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                D - "19+1"
+              </label>
+            </div>
+            <button id="submit4" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q5" class="d-none" > 
+                <h2>Quetão 5</h2>
+                <h3 class="text-dark font-weight-normal">Quais das opções abaixo é a correta:           
+                  . Var idade = 17
+                  . Var entrar = 18
+                  . Var documento = "sim"
+                  If ( idade > entrar && documento === 'sim' ){ condole. Log. ( "boa noite! Você está autorizado a entrar" ) } else { console. Log ( " voce ainda não completou maioridade. Nao pode entrar")}
+          
+                </h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q5-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                A -  Verdadeiro.
+              
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q5-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - Falso.
+              </label>
+            </div>
+            <button id="submit5" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q6" class="d-none">
+                <h2>Quetão 6</h2>
+                <h3 class="text-dark font-weight-normal">Qual parâmetro deve ser passado  no "console" para retornar a operação abaixo? 
+                  Function calculo (){ 
+                  return 2*(3 + 2) + (4 + 0 * (10/5));
+                  } console.log ("?")</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="q6-a" checked>
+                  <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  A -  cálculo.
+                  </label>
+                </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q6-b" value=""  checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  B -  function()
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q6-c" value="">
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                  C - Number()
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q6-d" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                  D - calculo()
+                </label>
+              </div>
+              <button id="submit6" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q7" class="d-none">
+                <h2>Quetão 7</h2>
+                <h3 class="text-dark font-weight-normal">Qual opção cria uma lista ordenada com os nomes abaixo? 
+                  .Agatha
+                  . Hebert
+                  . Breno</h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q7-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                A - ol
+                   li Agatha /li
+                  li Hebert /li
+                  li Breno /li
+                  ol
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q7-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - ul
+                li Agatha /li
+                li Hebert /li
+                li Breno /li
+                ul
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q7-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                li
+                  ul Agatha /ul
+                  ul Hebert /ul
+                  ul Breno/ul
+                  li
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q7-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                
+              </label>
+            </div>
+            <button id="submit7" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q8" class="d-none">
+                <h2>Quetão 8</h2>
+                <h3 class="text-dark font-weight-normal">O exemplo abaixo representa uma array. Qual propriedade é usada para acessar o tamanho da array. E qual o Index da letra "M"?
+                  Var array =["Progamadores Cariocas"]
+                  </h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q8-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                A - array.map() e [5];
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q8-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - array.legth() e [6];
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q8-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+                C - array.filter() e [5];
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q8-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                D - array.length() e [5];
+              </label>
+            </div>
+            <button id="submit8" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q9" class="d-none">
+                <h2>Quetão 9</h2>
+                <h3 class="text-dark font-weight-normal">Corrija o código:
+                  Class título = { fontfamily: "Arial"; font-eigth: normal; bacground: red; </h3>
+               <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q9-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                A - #titulo{fontfamily: "Arial"; font-eigth: normal; bacground: red; 
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q9-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                B - Class título ( fontfamily: "Arial"; font-weigth: normal; background: red;)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q9-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+              C - .título { font-family: "Arial"; font-weigth: normal; background: red;    
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q9-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                D - .título = (font-family: "Arial", font-weigth: normal, background: red,
+
+              </label>
+            </div>
+            <button id="submit9" type="submit">Enviar Resposta</button>
+            </div>
+
+            <div id="q10" class="d-none">
+                <h2>Quetão 10</h2>
+                <h3 class="text-dark font-weight-normal">O que significa as siglas a seguir usadas no MySql: DML e DDL.</h3>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="q10-a" checked>
+                <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                A - Data Macro Language e Data Definition Language.
+                </label>
+              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q10-b" value=""  checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+               B - Data Manipulation Language e Data Definition Language.  
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q10-c" value="">
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault1">
+               C - Data Manipulation e Data Dictionary language. 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="q10-d" checked>
+              <label class="form-check-label text-dark font-weight-normal" for="flexRadioDefault2">
+                D -  Data Manipulation Lenght e Data Difinition Lenght.
+              </label>
+            </div>
+            <button id="submit10" type="submit">Enviar Resposta</button>
+            </div>
+        </form>
+    </div> 
+<!-- Footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img
+        class="mb-2"
+        src="imagens/FrontEnders.png"
+        alt=""
+        width="150"
+        height="150"/>
+      <small class="d-block mb-3 text-muted"
+        >FrontEnders &copy; 2017-2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="header-footer">Nossos Serviços</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Curso de HTML</a></li>
+        <li><a class="text-muted" href="#">Curso de CSS</a></li>
+        <li><a class="text-muted" href="#">Curso de JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 class="header-footer">Fale Conosco</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="contato.html">Contato</a></li>
+        <li><a class="text-muted" href="login.html">Login</a></li>
+        <li>
+          <a class="text-muted" href="recuperar-senha.html"
+            >Recuperar senha</a>
+        </li>
+        <li>
+          <a class="text-muted" href="lista-espera.html"
+            >Lista de espera</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

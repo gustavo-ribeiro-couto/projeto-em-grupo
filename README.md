@@ -1,1 +1,2 @@
-# projeto-em-grupo
+# projeto-grupo-2
+projeto em grupo site da empresa FrontEnders
